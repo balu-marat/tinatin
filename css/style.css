@@ -303,7 +303,7 @@ body p {
     margin-bottom: 10px;
 }
 .dropdownMenuCart {
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 330px;
     background: white;
@@ -313,25 +313,35 @@ body p {
     z-index: 2;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+.dropdownMenuCart .ul__li li {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.dropdownMenuCart .ul__li li .right {
+    float: none;
+}
+
+
 .n-m--img {
     width: 85px;
     height: 85px;
 }
 .dropdownMenuCart .ul__li .left {
-    margin-right: 15px;
+    margin-right: 25px;
     cursor: pointer;
 }
 .dropdownMenuCart .ul__li li {
     margin-bottom: 20px;
 }
-/* .dropdownMenuCart .ul__li li {
-    display: flex;
-     width: 100%;
-} */
+
 .dropdownMenuCart .ul__li li .right > a {
-    display: block;
-    text-align: end;
     cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.trash {
+    text-align: end;
 }
 .dropdownMenuCart .right del {
     margin-left: 10px;
