@@ -343,6 +343,9 @@ body p {
 .trash {
     text-align: end;
 }
+.trash a i {
+    color: #000;
+}
 .dropdownMenuCart .right del {
     margin-left: 10px;
 }
