@@ -303,7 +303,7 @@ body p {
     margin-bottom: 10px;
 }
 .dropdownMenuCart {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 330px;
     background: white;
