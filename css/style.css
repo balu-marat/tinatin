@@ -369,7 +369,7 @@ body p {
     background: red;
     transition: .8s;
 }
-.dropdownMenuCart .d-pr {
+.dropdownMenuCart .shopcard__total {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -378,7 +378,7 @@ body p {
     margin: 20px 0;
     text-align: center;
 }
-p.d-pr span:nth-child(2) {font-size: 16px;font-weight: bold;}
+p.shopcard__total span:nth-child(2) {font-size: 16px;font-weight: bold;}
 .hover-menu li:hover > .dropdownMenu {
     display: block;
 }
@@ -569,7 +569,7 @@ p.d-pr span:nth-child(2) {font-size: 16px;font-weight: bold;}
     width: 100%;
     margin-top: -10px;
 }
-.price span {
+.oprice {
     font-size: 20px;
     font-weight: bold;
     color: #000;
