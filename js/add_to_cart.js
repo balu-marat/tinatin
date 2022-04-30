@@ -29,6 +29,19 @@ var myFunctionProduct = function() {
 
   //   Удаление товара
 
+  deleteProduct();
+  
+  //   Получение суммы кол-ва товаров
+  total_price();
+
+};
+for (var i = 0; i < cardProduct.length; i++) {
+  cardProduct[i].addEventListener('click', myFunctionProduct, false);
+}
+
+
+
+function deleteProduct() {
   var click__trash = document.querySelectorAll('.trash');
   for (var i = 0; i < click__trash.length; i++) {
     click__trash[i].addEventListener('click', del_func, false);
@@ -37,16 +50,10 @@ var myFunctionProduct = function() {
   function del_func(evt) {
     evt.preventDefault();
     this.parentNode.parentNode.remove();
-
+    total_price();
   }
-  total_price();
-    //   Получение суммы кол-ва товаров
-
-    
-};
-for (var i = 0; i < cardProduct.length; i++) {
-  cardProduct[i].addEventListener('click', myFunctionProduct, false);
 }
+
 
 function total_price() {
   var count__price = document.querySelectorAll('.right .oprice');
@@ -55,7 +62,6 @@ function total_price() {
   for (var i = 0; i < count__price.length; i++) {
     total_price = total_price + (+count__price[i].innerHTML);
   }
-  // console.log(total_price);
   document.getElementsByClassName('total__cart')[0].innerHTML = `$ ${total_price}`;
   document.querySelectorAll('.shopcard__total .shop_t')[0].innerHTML = `$ ${total_price}`;
 }
