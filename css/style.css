@@ -104,9 +104,7 @@ body p {
     padding: 0px 0px 0 15px;
     border-right: 0;
 }
-/* .ul__li li {
-    padding: 0px 15px;
-} */
+
 .ul__li .i-decor i {
     margin-right: 10px;
 }
@@ -118,6 +116,38 @@ body p {
 }
 .icon_msg {
     position: relative;
+}
+.dropLangBlock {
+    position: relative;
+}
+.langBlok {
+    display: none;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 100%;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    font-size: 14px;
+    z-index: 1;
+    background-color: #fff;
+    right: -2px;
+}
+.dropLangBlock:hover > .langBlok {
+    display: block;
+}
+.langBlok li {
+    margin: 10px 0;
+}
+.langBlok li a {
+    color: #000;
+    transition: .5s;
+}
+.langBlok li a:hover {
+    color: #7cd0f7;
+    transition: .5s;
 }
 .msg {
     position: absolute;
@@ -291,8 +321,6 @@ body p {
     z-index: 1;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     padding: 20px 0;
-    /* -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); */
 }
 .dropdownMenuAus ul {
     text-align: center;
@@ -346,7 +374,7 @@ body p {
 .trash a i {
     color: #000;
 }
-.dropdownMenuCart .right del {
+span.currencyDel {
     margin-left: 10px;
 }
 .dropdownMenuCart .right p {
@@ -545,6 +573,7 @@ p.shopcard__total span:nth-child(2) {font-size: 16px;font-weight: bold;}
     display: inline-block;
     min-height: 327px;
     cursor: pointer;
+    width: 210px;
 }
 .product img {
     width: 217px;
